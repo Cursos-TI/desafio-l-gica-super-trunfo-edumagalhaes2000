@@ -105,6 +105,28 @@ int main() {
                 return 0;
         }
 
+        // Exibindo a comparação dos atributos
+        printf("\nComparando Atributo %d:\n", i + 1);
+        switch (atributos[i]) {
+            case 1:
+                printf("Atributo: Populacao\n");
+                break;
+            case 2:
+                printf("Atributo: Area\n");
+                break;
+            case 3:
+                printf("Atributo: PIB\n");
+                break;
+            case 4:
+                printf("Atributo: Pontos Turisticos\n");
+                break;
+            case 5:
+                printf("Atributo: Densidade Demografica\n");
+                break;
+        }
+        
+        printf("%s: %.2f | %s: %.2f\n", nome1, valor1_c1, nome2, valor1_c2);
+
         // Ajuste para densidade (menor vence)
         soma1 += (atributos[i] == 5 ? -valor1_c1 : valor1_c1);
         soma2 += (atributos[i] == 5 ? -valor1_c2 : valor1_c2);
